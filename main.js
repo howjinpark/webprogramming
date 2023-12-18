@@ -1,9 +1,9 @@
 let files = [
-  "C:\\Users\\user\\Desktop\\web_20190048_박호진\\image\\myunranmayo.jpg",
-    "C:\\Users\\user\\Desktop\\web_20190048_박호진\\image\\kimchnabe.jpg",
-    "C:\\Users\\user\\Desktop\\web_20190048_박호진\\image\\myoranpasta.jpg",
-    "C:\\Users\\user\\Desktop\\web_20190048_박호진\\image\\ankimo.jpg",
-    "C:\\Users\\user\\Desktop\\web_20190048_박호진\\image\\rice.jpg"
+  ".\\image\\myunranmayo.jpg",
+    ".\\image\\kimchnabe.jpg",
+    ".\\image\\myoranpasta.jpg",
+    ".\\image\\ankimo.jpg",
+    ".\\image\\rice.jpg"
   ];
 let imgs = new Array();
 for (let i=0; i<files.length; i++) {
