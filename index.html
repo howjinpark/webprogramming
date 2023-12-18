@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>    
+    <script src="./main.js" charset="UTF-8"></script>
+    <div id="header">요리 성장 갤러리</div>
+    <nav id="menubar">
+        <ul>
+            <li><a href="#header">HOME</a></li>
+            <li><a href="#growth">PHOTO</a></li>
+            <li><a href="#info">INFO</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+    </nav>
+    <div id="growth">
+        <p>박호진의 요리를 보고 싶다면 ⬇️ 클릭!</p>
+        <img style="border:10px ridge wheat" src="C:\Users\user\Desktop\web_20190048_박호진\image\karagedong.jpg" alt="." width="400" height="230" onclick="change(this)">
+    </div>
+    <div id="tema">
+        <p>🧡테마를 선택하면 다른 요리 사진을 볼 수 있어요!🧡</p>
+        <form>
+            <input type="radio" name="theme" value="C:\Users\user\Desktop\web_20190048_박호진\image\nyoki.jpg" onchange="drawImage()" checked> 뇨끼
+            <input type="radio" name="theme" value="C:\Users\user\Desktop\web_20190048_박호진\image\karagedong.jpg" onchange="drawImage()"> 치킨가라아게동
+            <input type="radio" name="theme" value="C:\Users\user\Desktop\web_20190048_박호진\image\sakedong.jpg" onchange="drawImage()"> 사케동
+            <input type="radio" name="theme" value="C:\Users\user\Desktop\web_20190048_박호진\image\karage.jpg" onchange="drawImage()"> 김치치킨가라아게나베
+            <input type="radio" name="theme" value="C:\Users\user\Desktop\web_20190048_박호진\image\omurice.jpg" onchange="drawImage()"> 오므라이스
+            <input type="radio" name="theme" value="C:\Users\user\Desktop\web_20190048_박호진\image\deulgiruempasta.jpg" onchange="drawImage()"> 들기름명란파스타
+        </form>
+        <img id="cookimage" src="C:\Users\user\Desktop\web_20190048_박호진\image\nyoki.jpg" alt="" width="400" height="230">
+      </div>
+    <div id="info">
+      <p>🐶호진's 요리 INFORMATION🐶</p>
+      <div id="info1">
+        <div id="info-left">
+        <ul>
+          <li><span style="background-color: #fff5b1">기본정보</span></li>
+          <ul>
+            <li>메뉴 : 들기름명란파스타</li>
+            <li>재료 : 소면 1인분양, 청양고추 1/3개, 다진쪽파 5Ts, 계란, 양파 반 쪽, 명란1, 쪽파(부추)</li>
+            <li>소스 : 들기름 4Ts, 진간장 2Ts, 설팅 1Ts</li>
+          </ul>
+        </ul>
+        </div>
+        <div id="info-right">
+          <ul>
+            <li><span style="background-color: #fff5b1">과정</span></li>
+            <ul>
+              <li>설명</li>
+              <li>1. 면을 끓은 물에 삶아 얼음물에 차갑게 식혀 물기를 제거한다.</li>
+              <li>양파는 얇게 슬라이스 하고 찬물에 넣어둔다.</li>
+              <li>쳥양고추와 쪽파(부추)를 썰어서 준비한다</li>
+              <li>소스를 만들고 준비한 재료들과 모두 믹싱한다</li>
+            </ul>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="contact">
+      <p>📆박호진의 쿠킹클래스 약속 잡기📆</p>
+      <hr>
+      <h2>박호진의 레시피를 배우고 싶다면 약속을 먼저 잡아주세요~</h2>
+      <form id="appointmentForm">
+        <table>
+          <tr><td>이름</td>
+            <td><input type="text" id="appointmentName"></td></tr>
+          <tr><td>약속날짜</td>
+              <td><input type="date" id="appointmentDate" value="2023-12-11"></td></tr>
+          <tr><td>약속시간</td>
+              <td><input type="time" id="appointmentTime"></td></tr>
+          <tr><td>약속장소</td>
+              <td><input type="text" id="appointmentPlace"></td></tr>
+        </table>
+        <input type="button" value="입력" onclick="scheduleAppointment()">
+      </form> 
+    </div>
+    <footer>
+      <p>Created by 컴퓨터공학과, 002반, 20190048, 박호진</p>
+    </footer>
+</body>
+</html>
